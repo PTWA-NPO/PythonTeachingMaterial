@@ -5,19 +5,20 @@ import Astrologer
 class MyTestCase(unittest.TestCase):
 
     def test_birthday_dict(self):
-        self.assertDictEqual(Astrologer.get_birthday_dict(1995, 12, 13), {
-            1: 3,
-            2: 1,
-            3: 1,
-            5: 1,
-            9: 2
-        })
-        self.assertDictEqual(Astrologer.get_birthday_dict(2005, 1, 13), {
-            1: 2,
-            2: 1,
-            3: 1,
-            5: 1
-        })
+
+        self.assertEqual(8, sum(Astrologer.get_birthday_number_list(1, 1, 1)))
+        self.assertListEqual(Astrologer.get_birthday_number_list(1995, 12, 13),
+                             [0, 3, 1, 1, 0, 1, 0, 0, 0, 2]
+                             # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+                             )
+        self.assertListEqual(Astrologer.get_birthday_number_list(2005, 1, 13),
+                             [3, 2, 1, 1, 0, 1, 0, 0, 0, 0]
+                             # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+                             )
+        self.assertListEqual(Astrologer.get_birthday_number_list(1, 1, 1),
+                             [5, 3, 0, 0, 0, 0, 0, 0, 0, 0]
+                             # [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+                             )
 
     def test_life_number(self):
         self.assertEqual(4, Astrologer.get_life_number(1995, 12, 13))

@@ -1,24 +1,17 @@
 
-def get_birthday_dict(year=1900, month=1, day=1) -> dict:
+def get_birthday_number_list(year=1900, month=1, day=1) -> list:
     """
-    會回傳一個dict，dict儲存生日中每個數字的數量。
+    會回傳一個list，list儲存生日中每個數字的數量。
     ex 1995 12 13 -> 1有3個 2有1個 3有1個 5有1個 9有2個
     這樣回傳
-    {
-        1:3,
-        2:1,
-        3:1,
-        5:1,
-        9:2
-    }
+    [0,3,1,1,0,5,0,0,0,2]
+
+    2001 08 13 -> 0有3個 1有2個 2有1個 3有1個 8有1個 
+    這樣回傳
+    [3,2,1,1,0,0,0,0,1,0]
+
     """
-    return {
-        1: 3,
-        2: 1,
-        3: 1,
-        5: 1,
-        9: 2
-    }
+    return []
 
 
 def get_life_number(year=1900, month=1, day=1) -> int:
