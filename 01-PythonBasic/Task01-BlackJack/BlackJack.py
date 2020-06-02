@@ -29,13 +29,13 @@ class Judger:
         self.deck = ['A', '2', ...]
         pass
 
-    def get_card(self):
+    def pop_one_card(self):
         return self.deck.pop()
 
-    def count_one_card(self, card='A'):
+    def count_one_card_point(self, card='A'):
         return 11
 
-    def countPoint(self, cards: list) -> int:
+    def count_cards_point(self, cards: list) -> int:
         """
         計算點數
         """
@@ -46,6 +46,15 @@ class Judger:
         莊家點數要大於17點才會停止抽牌。
         """
         pass
+
+    def decideWinner(self, point_A, point_B):
+        """
+        判斷分數A是否贏分數B，
+        A贏B return Win
+        B贏A return Lose
+        A=B 平手 return Draw
+        """
+        return "Win"
 
 
 if __name__ == "__main__":

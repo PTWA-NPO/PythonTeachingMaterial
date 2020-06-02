@@ -33,3 +33,5 @@ Class的概念結合了**資料**與**行為**，可以初步了解什麼是**�
 
 ## [Task 02 Astrologer](https://github.com/kylingithub/PythonTeachingMaterial/tree/master/01-PythonBasic/Task02-Astrologer)
 單元測試的進階練習，寫一個占卜師模組吧
+
+<!-- TODO Ch1~Ch5 出模仿型的作業 Ch6開始可以出有標準答案的作業與創作型的作業-->
