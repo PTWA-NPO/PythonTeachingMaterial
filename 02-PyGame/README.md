@@ -1,21 +1,8 @@
 # Pygame
 
-認識遊戲迴圈、流程、while
+## [Ch01 PyGame Start](https://github.com/kylingithub/PythonTeachingMaterial/tree/master/02-PyGame/Ch01-PyGameStart)
 
-畫面(display) 視窗
-顏色
-矩形 座標 image
-clock
-keyboard
--->做一個動畫
+## [Ch02 PyGame Draw]()
 
-碰撞
-window event
+## Ch03 PyGame Sprite
 
-sprite(物件繼承)
--->會掉落的球
--->
-dict
-
-旋轉
-專案發想(Black Jack)
