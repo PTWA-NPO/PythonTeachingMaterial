@@ -1,9 +1,9 @@
 # Python Basic Material
-
-## [Chapter 01 Variable](https://github.com/kylingithub/PythonTeachingMaterial/tree/master/01-PythonBasic/Ch01-Variable)
+###### tags: `Python`
+## [Chapter 01 Variable](https://hackmd.io/jTCmn9GkQAyoBuJdLbaMFg)
 介紹Python中各種變數各種資料類型
 
-## [Chapter 02 if elif else](https://github.com/kylingithub/PythonTeachingMaterial/tree/master/01-PythonBasic/Ch02-If_elif_else)
+## [Chapter 02 if elif else](https://github.com/kylingithub/PythonTeachingMaterial/tree/master/01-PythonBasic/Ch02-If_elif_else/README.md)
 介紹如何使用if else控制程式的流動方向。
 
 ## [Chapter 03 Module](https://github.com/kylingithub/PythonTeachingMaterial/tree/master/01-PythonBasic/Ch03-Module)
