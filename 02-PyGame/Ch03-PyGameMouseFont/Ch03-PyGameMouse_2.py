@@ -6,6 +6,8 @@ from os import path
 
 # 初始化 initialize
 pygame.init()
+pygame.font.init()
+font_name = pygame.font.match_font('arial')
 size = width, height = 640, 480
 background_color = 200, 200, 200
 screen = pygame.display.set_mode(size)
@@ -16,6 +18,14 @@ pos_y = 0
 radius = 10
 
 circle_box = []
+
+
+def draw_text(surf, text, size, x, y):
+    font = pygame.font.Font(font_name, size)
+    text_surface = font.render(text, True, (255, 255, 255))
+    text_rect = text_surface.get_rect()
+    text_rect.midtop = (x, y)
+    surf.blit(text_surface, text_rect)
 
 
 while 1:
@@ -34,6 +44,8 @@ while 1:
         circle['pos_x'] = pos_x
         circle['pos_y'] = pos_y
         circle['r'] = 5
+        circle['color'] = ()
+
         circle_box.append(circle)
         # print("Pos :", pos)
         pass
@@ -52,7 +64,7 @@ while 1:
     # 更新遊戲畫面
     screen.fill(background_color)
     # 畫圓
-
+    draw_text(screen, "Ball "+str(len(circle_box)), 36, 500, 300)
     for c in circle_box:
         pygame.draw.circle(
             screen,
@@ -68,5 +80,6 @@ while 1:
             c['r'],
             3
         )
+
     pygame.display.flip()
     clock.tick(10)
